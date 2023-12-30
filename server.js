@@ -8,6 +8,9 @@ const server = http.createServer((req, res) => {
   let contentType;
 
   switch (ext) {
+    case ".pdf":
+      contentType = "application/pdf";
+      break;
     case ".css":
       contentType = "text/css";
       break;
