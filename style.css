@@ -122,6 +122,19 @@ hr {
   border: none; /* Remove the default border */
 }
 
+/* Bio */
+.bio {
+  max-width: 40%;
+  margin: auto;
+  padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .bio {
+    max-width: 90%; /* Increased max-width for smaller screens */
+  }
+}
+
 /* Links */
 a {
   text-decoration: none;
