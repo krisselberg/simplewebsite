@@ -9,6 +9,10 @@ app.post("/voice", (req, res) => {
   res.status(200).send("hello world");
 });
 
+app.get("/voice", (req, res) => {
+  res.status(200).send("hello world");
+});
+
 app.use((req, res, next) => {
   const filePath = req.path === "/" ? "./index.html" : `.${req.path}`;
   const ext = path.extname(filePath);
