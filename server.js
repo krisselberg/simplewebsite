@@ -6,8 +6,7 @@ const app = express();
 app.use(express.json()); // Middleware to parse JSON bodies
 
 app.post("/voice", (req, res) => {
-  console.log("hello world");
-  res.status(200).send("Received POST request at /voice");
+  res.status(200).send("hello world");
 });
 
 app.use((req, res, next) => {
