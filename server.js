@@ -1,9 +1,17 @@
-const http = require("http");
+const express = require("express");
 const fs = require("fs");
 const path = require("path");
+const app = express();
 
-const server = http.createServer((req, res) => {
-  const filePath = req.url === "/" ? "./index.html" : `.${req.url}`;
+app.use(express.json()); // Middleware to parse JSON bodies
+
+app.post("/voice", (req, res) => {
+  console.log("hello world");
+  res.status(200).send("Received POST request at /voice");
+});
+
+app.use((req, res, next) => {
+  const filePath = req.path === "/" ? "./index.html" : `.${req.path}`;
   const ext = path.extname(filePath);
   let contentType;
 
@@ -23,15 +31,13 @@ const server = http.createServer((req, res) => {
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
-      res.writeHead(404, { "Content-Type": "text/html" });
-      return res.end("404 Not Found");
+      res.status(404).type("text/html").send("404 Not Found");
+    } else {
+      res.status(200).type(contentType).send(data);
     }
-    res.writeHead(200, { "Content-Type": contentType });
-    res.write(data);
-    return res.end();
   });
 });
 
-server.listen(30000, () => {
+app.listen(30000, () => {
   console.log("Server running at http://localhost:30000/");
 });
