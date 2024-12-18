@@ -125,13 +125,14 @@ hr {
 /* Bio */
 .bio {
   max-width: 40%;
-  margin: auto;
+  margin: 0 auto 0 30%;
   padding: 10px 0;
 }
 
 @media screen and (max-width: 900px) {
   .bio {
     max-width: 90%; /* Increased max-width for smaller screens */
+    margin: 0 auto 0 5%;
   }
 }
 
