@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
+  assetPrefix: '',
+  basePath: '',
 };
 
 export default nextConfig;
