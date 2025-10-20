@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Founding Member of Technical Staff @ UniversalAGI. Currently researching and building AI agents that actually work.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.svg",
   },
 };
 
