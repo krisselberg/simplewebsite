@@ -4,7 +4,7 @@ import Tooltip from "./Tooltip";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-gray-800/80">
+    <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-gray-950/90">
       <Container className="py-3">
         <div className="flex justify-between items-center">
           <Link

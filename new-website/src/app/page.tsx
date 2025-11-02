@@ -10,11 +10,10 @@ import Separator from "@/components/Separator";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-800 text-white">
+    <div className="min-h-screen bg-gray-950 text-white">
       <Header />
 
       <Hero />
-      <Separator />
       <CurrentStatus />
       <Separator />
       <Achievements />

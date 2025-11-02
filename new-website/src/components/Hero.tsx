@@ -17,12 +17,6 @@ export default function Hero() {
               UniversalAGI
             </a>
           </h2>
-
-          <p className="text-gray-300 text-lg leading-relaxed">
-            Hi! I'm Kris. Currently, I'm researching and building AI agents that
-            actually work. I speak okay Swedish, good English, and terrible
-            Spanish. Please reach out if you want to chat about anything!
-          </p>
         </div>
       </Container>
     </section>
