@@ -7,7 +7,7 @@ export default function CurrentStatus() {
         <div className="font-mono text-sm">
           <div className="mb-4">
             <div className="text-gray-500 text-xs">
-              Last updated: July 6, 2025
+              Last updated: November 22, 2025
             </div>
           </div>
 
@@ -22,7 +22,7 @@ export default function CurrentStatus() {
             <div className="flex items-start gap-4">
               <span className="text-gray-500 flex-shrink-0 w-[140px]">Writing:</span>
               <span className="text-gray-300">
-                "A Deep Dive into AI Agent Memory"
+                "Why Direct Numerical Simulation Remains Computationally Intractable"
               </span>
             </div>
 
